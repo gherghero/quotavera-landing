@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuotaVera — Vinci una casa di lusso</title>
+
+  <!-- Font & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --brand: #00a896;
+      --brand-dark: #017a6d;
+      --text-main: #1e2d3b;
+      --bg-light: #f7f9fa;
+      --bg-card: #ffffff;
+      --shadow: 0 8px 24px rgba(0,0,0,.05);
+    }
+    *{box-sizing:border-box; margin:0; padding:0}
+    body{
+      font-family:'Inter',sans-serif;
+      background:var(--bg-light);
+      color:var(--text-main);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    h1,h2,h3{font-weight:700}
+
+    header{
+      display:flex;
+      justify-content:center;
+      padding:26px 32px;
+      background:#fff;
+      box-shadow:var(--shadow);
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+    header img{height:36px}
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 110px 24px 90px;
+      background: radial-gradient(circle at 50% 0%, #e9faf8 0%, #f4fefe 60%);
+      text-align: center;
+      min-height: 450px;
+    }
+
+    .hero-inner {
+      max-width: 720px;
+    }
+    .hero h1{
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      color: var(--brand-dark);
+      margin-bottom: .5em;
+    }
+    .hero p{
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      max-width: 680px;
+      margin-inline: auto 2rem;
+    }
+    .btn{
+      display: inline-block;
+      margin-top: 32px;
+      background: var(--brand);
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: .25s;
+    }
+    .btn:hover{
+      background: var(--brand-dark);
+      transform: translateY(-2px);
+    }
+
+    section.wrapper{
+      max-width: 1200px;
+      margin-inline: auto;
+      padding: 0 24px;
+    }
+
+    .features{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      margin: 80px auto;
+    }
+    .card{
+      background: var(--bg-card);
+      padding: 32px 28px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: .25s;
+    }
+    .card:hover{transform: translateY(-4px)}
+    .card h3{
+      color: var(--brand-dark);
+      font-size: 1.25rem;
+      margin-bottom: .75em;
+    }
+
+    .quote-section{
+      background: #ecfdfb;
+      padding: 90px 0 60px;
+      margin-top: 60px;
+    }
+    .quote-wrap{
+      max-width: 700px;
+      margin-inline: auto;
+      background: #fff;
+      padding: 48px 40px;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .quote-wrap h3{
+      font-size: 1.5rem;
+      color: var(--brand-dark);
+      margin-bottom: 1em;
+      text-align: center;
+    }
+    .quote-wrap p{
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+
+    .final-cta{
+      text-align: center;
+      margin: 70px 0 40px;
+    }
+
+    footer{
+      background: var(--brand-dark);
+      color: #fff;
+      text-align: center;
+      padding: 28px 16px;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo_quotavera.png" alt="QuotaVera logo" />
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Partecipa per vincere case di lusso</h1>
+      <p>Compra un contenuto digitale a partire da 1&nbsp;€ e ottieni una <strong>quota vera</strong> per partecipare all’estrazione di immobili esclusivi – senza costi aggiuntivi.</p>
+      <a href="form.html" class="btn">Iscriviti alla lista d’attesa</a>
+    </div>
+  </section>
+
+  <section class="wrapper">
+    <div class="features">
+      <div class="card">
+        <h3>Acquisto digitale</h3>
+        <p>Con ogni contenuto digitale ottieni una quota automatica per l’estrazione.</p>
+      </div>
+      <div class="card">
+        <h3>Progress bar trasparente</h3>
+        <p>Vedi in tempo reale le quote vendute e il raggiungimento del valore dell’immobile.</p>
+      </div>
+      <div class="card">
+        <h3>Estrazione in diretta</h3>
+        <p>Live streaming con supervisione notarile per garantire massima trasparenza.</p>
+      </div>
+      <div class="card">
+        <h3>Zero costi per il vincitore</h3>
+        <p>QuotaVera copre notaio, tasse e trasferimento dell’immobile.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-section" id="quotecard">
+    <div class="quote-wrap">
+      <h3>Cosa ricevi con ogni QuoteCard?</h3>
+      <p>
+        Ogni quota che acquisti è accompagnata da una <strong>QuoteCard</strong> unica in formato digitale:
+        <br><br>
+        • Design generativo con pattern e colori diversi<br>
+        • Aforisma ispirazionale su casa, sogni o fortuna<br>
+        • Numero progressivo della quota (es. #04215/50000)<br><br>
+        Le QuoteCard sono disponibili anche come NFT (non serve un wallet): ti verranno inviate via email.
+      </p>
+    </div>
+    <div class="final-cta">
+      <a href="form.html" class="btn">Iscriviti ora</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 QuotaVera S.r.l. – Tutti i diritti riservati
+  </footer>
+
+</body>
+</html>
